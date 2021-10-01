@@ -9,7 +9,7 @@ services:
         ports:
             - 9200:9200
         volumes:
-            - es-volume:/usr/share/elasticsearch/data
+            - es-data:/usr/share/elasticsearch/data
 
     kibana:
         container_name: kb-container
@@ -22,4 +22,4 @@ services:
             - 5601:5601
 
 volumes:
-    es-volume: {}
+    es-data: {}
